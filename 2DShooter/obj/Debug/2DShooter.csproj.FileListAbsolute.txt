@@ -1,0 +1,8 @@
+C:\Users\cyoun\OneDrive\Desktop\SD725\2DShooter\2DShooter\2DShooter\bin\Debug\2DShooter.exe.config
+C:\Users\cyoun\OneDrive\Desktop\SD725\2DShooter\2DShooter\2DShooter\bin\Debug\2DShooter.exe
+C:\Users\cyoun\OneDrive\Desktop\SD725\2DShooter\2DShooter\2DShooter\bin\Debug\2DShooter.pdb
+C:\Users\cyoun\OneDrive\Desktop\SD725\2DShooter\2DShooter\2DShooter\obj\Debug\2DShooter.csproj.AssemblyReference.cache
+C:\Users\cyoun\OneDrive\Desktop\SD725\2DShooter\2DShooter\2DShooter\obj\Debug\2DShooter.csproj.SuggestedBindingRedirects.cache
+C:\Users\cyoun\OneDrive\Desktop\SD725\2DShooter\2DShooter\2DShooter\obj\Debug\2DShooter.csproj.CoreCompileInputs.cache
+C:\Users\cyoun\OneDrive\Desktop\SD725\2DShooter\2DShooter\2DShooter\obj\Debug\2DShooter.exe
+C:\Users\cyoun\OneDrive\Desktop\SD725\2DShooter\2DShooter\2DShooter\obj\Debug\2DShooter.pdb
