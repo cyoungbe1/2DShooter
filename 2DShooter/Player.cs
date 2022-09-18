@@ -22,5 +22,62 @@ namespace _2DShooter
         {
             return String.Format("{weapon1,weapon2,weapon3,item1,item2,totalPoints");
         }
+
+        public class selectWeapon : IWeapon
+
+        {
+
+            public char newWeapon;
+
+            public void chooseWeapon(int totalPoints)
+
+            {
+
+                if (totalPoints < 6)
+
+                {
+
+                    newWeapon = 'r';  // riffle
+
+                }
+
+                else if (totalPoints < 11)
+
+                {
+
+                    newWeapon = 'k';  // knife
+
+                }
+
+                else if (totalPoints < 16)
+
+                {
+
+                    newWeapon = 'b';  // bomb
+
+                }
+
+                else if (totalPoints < 21)
+
+                {
+
+                    newWeapon = 'a';  // bow and arrow
+
+                }
+
+                else
+
+                {
+
+                    newWeapon = 'c';  // cannon
+
+                }
+
+
+
+            }
+
+        }
+
     }
 }
