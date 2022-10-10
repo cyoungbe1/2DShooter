@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
+using System.Text.Json;
+
 
 namespace _2DShooter
 {
     public class Program
     {
-        static void Main(string[] args)
+         static void Main(string[] args)
         {
             Player player1 = new Player();
             player1.weapon1 = 'a';
@@ -67,6 +69,18 @@ namespace _2DShooter
             Console.WriteLine("Weapon with 10 points {0}", myObj.newWeapon.ToString());
 
             Console.ReadLine();
+
+
+            var playerList = new List<PlayerInfo>()
+            {
+            new PlayerInfo(){weapon1 = 'a'},
+
+
+            };
+
+            
         }
+
+        
     }
 }
