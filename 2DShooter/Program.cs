@@ -16,7 +16,7 @@ namespace _2DShooter
 {
     public class Program
     {
-         static void Main(string[] args)
+        static void Main(string[] args)
         {
             Player player1 = new Player();
             player1.weapon1 = 'a';
@@ -76,14 +76,17 @@ namespace _2DShooter
             Console.ReadLine();
 
 
-            var playerList = new List<PlayerInfo>()
-            {
-            new PlayerInfo(){weapon1 = 'a'},
+            CallWhoAmI_API();
+        }
 
 
-            };
+           
 
-                static void CallWhoAmI_API()
+            
+
+           
+
+            static void CallWhoAmI_API()
             {
                 // Specify the Dataverse environment name to connect with.
                 string resource = "https://org35646656.api.crm.dynamics.com";
@@ -153,7 +156,7 @@ namespace _2DShooter
             }
         }
     }
-}
+
 
         
     
