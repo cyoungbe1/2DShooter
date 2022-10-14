@@ -17,7 +17,11 @@ namespace _2DShooter
     public class Program
     {
         static void Main(string[] args)
+
         {
+            CallWhoAmI_API();
+
+
             Player player1 = new Player();
             player1.weapon1 = 'a';
             player1.weapon2 = 'b';
@@ -76,15 +80,15 @@ namespace _2DShooter
             Console.ReadLine();
 
 
-            CallWhoAmI_API();
+            
+
         }
 
 
-           
 
-            
 
-           
+
+
 
             static void CallWhoAmI_API()
             {
@@ -156,6 +160,7 @@ namespace _2DShooter
             }
         }
     }
+
 
 
         
