@@ -19,8 +19,8 @@ namespace _2DShooter
         static void Main(string[] args)
 
         {
-            CallWhoAmI_API();
 
+            DemoGame game = new DemoGame();
 
             Player player1 = new Player();
             player1.weapon1 = 'a';
@@ -32,52 +32,52 @@ namespace _2DShooter
 
             player1.name = "badassbob";
 
-            Console.Clear();
-            Console.WriteLine("name " + player1.name, "Total Points" + player1.totalPoints, "Item 1" + player1.item1, "Item 2" + player1.item2, "Weapon 1" + player1.weapon1, "Weapon2" + player1.weapon2, "Weapon 3" + player1.weapon3);
+          //  Console.Clear();
+         //   Console.WriteLine("name " + player1.name, "Total Points" + player1.totalPoints, "Item 1" + player1.item1, "Item 2" + player1.item2, "Weapon 1" + player1.weapon1, "Weapon2" + player1.weapon2, "Weapon 3" + player1.weapon3);
 
             // Add System Reflection component
 
-            Console.WriteLine("--------------------");
+        //    Console.WriteLine("--------------------");
 
-            Console.WriteLine("Reflection Example");
+        //    Console.WriteLine("Reflection Example");
 
-            Type thisType = player1.GetType();
+        //    Type thisType = player1.GetType();
 
-            Type weaponType = player1.weapon1.GetType();
+         //   Type weaponType = player1.weapon1.GetType();
 
-            Type pointsType = player1.totalPoints.GetType();
+        //    Type pointsType = player1.totalPoints.GetType();
 
-            Console.WriteLine(thisType.Name);
+        //    Console.WriteLine(thisType.Name);
 
-            Console.WriteLine(weaponType.Name);
+        //    Console.WriteLine(weaponType.Name);
 
-            Console.WriteLine(pointsType.Name);
+        //    Console.WriteLine(pointsType.Name);
 
 
 
-            Console.WriteLine("--------------------");
+        //    Console.WriteLine("--------------------");
 
             // Using Reflection to get information of an Assembly:
 
-            System.Reflection.Assembly info = typeof(int).Assembly;
+        //    System.Reflection.Assembly info = typeof(int).Assembly;
 
-            Console.WriteLine(info);
+        //    Console.WriteLine(info);
 
-            Console.ReadLine();
+       //     Console.ReadLine();
 
-            Console.WriteLine("--------------------");
+         //   Console.WriteLine("--------------------");
 
-            Player.selectWeapon myObj = new Player.selectWeapon();
+       //     Player.selectWeapon myObj = new Player.selectWeapon();
 
-            myObj.chooseWeapon(5);
+        //    myObj.chooseWeapon(5);
 
-            Console.WriteLine("Weapon with 5 points {0}", myObj.newWeapon.ToString());
+       //     Console.WriteLine("Weapon with 5 points {0}", myObj.newWeapon.ToString());
 
-            myObj.chooseWeapon(10);
+       //     myObj.chooseWeapon(10);
 
-            Console.WriteLine("Weapon with 10 points {0}", myObj.newWeapon.ToString());
+        //    Console.WriteLine("Weapon with 10 points {0}", myObj.newWeapon.ToString());
 
-            Console.ReadLine();
+        //    Console.ReadLine();
 
 
             

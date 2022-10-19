@@ -150,6 +150,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2DShooter\2DShooter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2DShooter\Shape2D.cs" />
+    <Compile Include="2DShooter\Vector2.cs" />
+    <Compile Include="DemoGame.cs" />
     <Compile Include="IWeapon.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
