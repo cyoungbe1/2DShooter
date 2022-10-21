@@ -18,11 +18,30 @@ namespace _2DShooter._2DShooter
         {
             this.DoubleBuffered = true;
         }
+
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // Canvas
+            // 
+            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.Name = "Canvas";
+            this.Load += new System.EventHandler(this.Canvas_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        private void Canvas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     public abstract class _2DShooter
     {
 
-        private Vector2 ScreenSize = new Vector2(512, 512);
+        private Vector2 ScreenSize = new Vector2(512,512);
         private string Title = "New Game";
         private Canvas Window = null;
         private Thread GameloopThread = null;
@@ -39,7 +58,7 @@ namespace _2DShooter._2DShooter
             this.Title = Title;
 
             Window = new Canvas();
-            Window.Size = new Size((int)ScreenSize.X, (int)ScreenSize.Y);
+            Window.Size = new Size((int)this.ScreenSize.X,(int)this.ScreenSize.Y);
             Window.Text = this.Title;
             Window.Paint += Renderer;
            
@@ -49,6 +68,8 @@ namespace _2DShooter._2DShooter
             GameloopThread = new Thread(Gameloop);
             GameloopThread.Start();
 
+           OnLoad();
+            
             Application.Run(Window);
 
         }
